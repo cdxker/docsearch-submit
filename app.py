@@ -11,7 +11,7 @@ SMTP_SERVER = os.environ.get('SMTP_SERVER')
 SMTP_PORT = int(os.environ.get('SMTP_PORT', 587))
 SMTP_USERNAME = os.environ.get('SMTP_USERNAME')
 SMTP_PASSWORD = os.environ.get('SMTP_PASSWORD')
-SENDER_EMAIL = os.environ.get('SENDER_EMAIL'')
+SENDER_EMAIL = os.environ.get('SENDER_EMAIL')
 RECIPIENT_EMAIL = os.environ.get('RECIPIENT_EMAIL')
 
 def send_email(subject, body):
