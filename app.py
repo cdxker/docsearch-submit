@@ -42,9 +42,10 @@ def submit_info():
     email = data.get('email')
     name = data.get('name')
     website = data.get('website')
+    usecase = data.get('useCase')
     
     # Compose email body
-    email_body = f"New Docsearch submission:\nName: {name}\nEmail: {email}\nWebsite: {website}"
+    email_body = f"New Docsearch submission:\nName: {name}\nEmail: {email}\nWebsite: {website}\nTheir usecase is {usecase}"
     
     try:
         send_email("💚💚💚Docsearch submission💚💚💚", email_body)
